@@ -8,6 +8,87 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1>Signup Form Car</h1>
+    <form method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          minlength="3"
+          maxlength="50"
+          name="name"
+          required="required"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required="required"
+          placeholder="Email"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Gender: </label>
+        <label for="gender_m">Male</label
+        ><input type="radio" id="gender_m" name="male" />
+        <label for="gender_f">Female</label
+        ><input type="radio" id="gender_m" name="female" />
+      </div>
+      <br />
+      <div>
+        <label for="cars">Car Brands: </label>
+        <select name="Select" id="cars">
+          <option value="" disabled selected>
+            --Please choose an option--
+          </option>
+          <option value="Maruti">Maruti</option>
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Ferari">Ferari</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" required id="age" placeholder="Age" name="age" />
+      </div>
+      <br />
+      <div>
+        <label for="dob">DOB</label>
+        <input type="date" required id="dob" name="dob" />
+      </div>
+      <br />
+      <div>
+        <label for="tel">Phone Number</label>
+        <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="tos">I agree to the TOS</label>
+        <input type="checkbox" id="tos" name="tos" />
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
